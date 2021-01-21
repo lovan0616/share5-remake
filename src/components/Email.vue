@@ -14,7 +14,7 @@
         </v-col>
       </v-row>
       <v-textarea label="內容" v-model="message" name="message" prepend-icon="mdi-playlist-edit" color="red darken-2" :rules="[rules.required]"></v-textarea>
-      <v-btn type="submit" class="my-3 px-5 d-block mx-auto" small>
+      <v-btn type="submit" class="mt-3 mb-5 px-5 d-block mx-auto red darken-2 white--text" small>
         寄信
         <v-icon right>mdi-send</v-icon>
         </v-btn>
@@ -55,13 +55,11 @@ export default {
           return
         }
         console.log('SUCCESS', result.status, result.text)
+        this.$router.push({ name:'Thank'})
       })
       .catch(error => {
         console.log('FAIL', error)
       })
-
-      this.$router.push({ name: 'home '})
-
     }
   }
 }
@@ -69,6 +67,12 @@ export default {
 
 <style scoped>
 #form {
-  width: 70vw;
+  width: 75vw;
+}
+
+@media (min-width: 600px), print {
+  #form {
+    width: 60vw;
+  }
 }
 </style>
