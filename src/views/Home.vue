@@ -23,7 +23,7 @@
 
     <v-parallax
       height="300"
-      src="http://incoming.iep.nccu.edu.tw/sites/default/files/Main%20Gate.jpg"
+      src="nccu.jpg"
       class="parallax"
     >
       <v-row>
