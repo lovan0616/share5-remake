@@ -2,9 +2,7 @@
   <div class="blog">
     <div class="tab-mode d-md-none">
       <v-tabs v-model="tab" grow>
-        <v-tabs-slider class="red darken-2">
-
-        </v-tabs-slider>
+        <v-tabs-slider class="red darken-2"></v-tabs-slider>
         <v-tab class="grey lighten-5 text--darken-2 red--text">All Posts</v-tab>
         <v-tab class="grey lighten-5 text--darken-2 red--text">Featured Post</v-tab>
         <v-tab class="grey lighten-5 text--darken-2 red--text">Recent Posts</v-tab>
@@ -12,19 +10,31 @@
 
       <v-tabs-items v-model="tab">
         <v-tab-item>
-          <div class="card-wrapper">
-            <PostCard v-for="post in posts" :key="post.id" :post="post" />
-          </div>
+          <v-container>
+            <v-row>
+              <v-col v-for="post in posts" :key="post.id" cols="12" sm="12">
+                <PostCard :post="post" />
+              </v-col>
+            </v-row>
+          </v-container>
         </v-tab-item>
         <v-tab-item>
-          <div class="card-wrapper">
-            <PostCard v-for="post in featuredPosts" :key="post.id" :post="post" />
-          </div>
+          <v-container>
+            <v-row>
+              <v-col v-for="post in featuredPosts" :key="post.id" cols="12" sm="12">
+                <PostCard :post="post" />
+              </v-col>
+            </v-row>
+          </v-container>
         </v-tab-item>
         <v-tab-item>
-          <div class="card-wrapper">
-            <PostCard v-for="post in recentPosts" :key="post.id" :post="post" />
-          </div>
+          <v-container>
+            <v-row>
+              <v-col v-for="post in recentPosts" :key="post.id" cols="12" sm="12">
+                <PostCard :post="post" />
+              </v-col>
+            </v-row>
+          </v-container>
         </v-tab-item>
       </v-tabs-items>
     </div>
@@ -57,7 +67,7 @@
 
 <script>
 import PostCard from "../components/PostCard";
-import PostCardMini from '../components/PostCardMini'
+import PostCardMini from "../components/PostCardMini";
 export default {
   name: "Blog",
   components: {
@@ -149,12 +159,6 @@ export default {
 
 
 <style scoped>
-.card-wrapper {
-  width: 500px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .side-section {
   width: 400px;
 }
