@@ -59,9 +59,9 @@ export default {
   data() {
     return {
       carousels: [
-        { link: "/carousels/night.jpg" },
-        { link: "carousels/street.jpg" },
-        { link: "/carousels/tea.jpg" }
+        { link: "../../public/carousels/night.jpg" },
+        { link: "../../public/carousels/street.jpg" },
+        { link: "../../public/carousels/tea.jpg" }
       ]
     };
   }
