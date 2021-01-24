@@ -37,19 +37,19 @@ export default {
           name: 'speech',
           name_ch: '校園演講',
           date: new Date('04/08/2015'),
-          album: ['/speech/pic1.png', '/speech/pic2.png', '/speech/pic3.png', '/speech/pic4.png', '/speech/pic5.png']
+          album: ['./speech/pic1.png', './speech/pic2.png', './speech/pic3.png', './speech/pic4.png', './speech/pic5.png']
         },
         {
           name: 'sandwich',
           name_ch: '手作三明治',
           date: new Date('03/26/2015'),
-          album: ['/sandwich/pic1.png', '/sandwich/pic2.png', '/sandwich/pic3.png', '/sandwich/pic4.png', '/sandwich/pic5.png', '/sandwich/pic6.png']
+          album: ['./sandwich/pic1.png', './sandwich/pic2.png', './sandwich/pic3.png', './sandwich/pic4.png', './sandwich/pic5.png', './sandwich/pic6.png']
         },
         {
           name: 'dinner',
           name_ch: '100份便當',
           date: new Date('12/30/2014'),
-          album: ['/dinner/pic1.png', '/dinner/pic2.png', '/dinner/pic3.png', '/dinner/pic4.png']
+          album: ['./dinner/pic1.png', './dinner/pic2.png', './dinner/pic3.png', './dinner/pic4.png']
         },
       ]
     }

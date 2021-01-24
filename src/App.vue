@@ -9,7 +9,7 @@
         alt="Share5"
         max-width="120px"
         max-height="64px"
-        src=/logo.png
+        src="../public/logo.png"
         transition="scale-transition"
       />
       </router-link>

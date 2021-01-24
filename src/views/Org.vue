@@ -33,38 +33,38 @@ export default {
         {
           id: 1,
           name: "芒草心",
-          image: "/organizations/pic1.jpg",
+          image: "./organizations/pic1.jpg",
           link: "https://www.homelesstaiwan.org/"
         },
         {
           id: 2,
           name: "人生百味",
-          image: "/organizations/pic2.jpg",
+          image: "./organizations/pic2.jpg",
           link: "https://www.facebook.com/Do.you.a.flavor/"
         },
         {
           id: 3,
           name: "當代漂泊",
-          image: "/organizations/pic3.png",
+          image: "./organizations/pic3.png",
           link:
             "https://www.facebook.com/%E7%95%B6%E4%BB%A3%E6%BC%82%E6%B3%8A-138150989532525/"
         },
         {
           id: 4,
           name: "街遊",
-          image: "/organizations/pic4.jpg",
+          image: "./organizations/pic4.jpg",
           link: "https://www.facebook.com/HiddenTaipei?fref=ts"
         },
         {
           id: 5,
           name: "大誌雜誌",
-          image: "/organizations/pic5.jpg",
+          image: "./organizations/pic5.jpg",
           link: "https://www.facebook.com/bigissue.tw?fref=ts"
         },
         {
           id: 6,
           name: "夢想城鄉",
-          image: "/organizations/pic6.jpg",
+          image: "./organizations/pic6.jpg",
           link: "https://www.facebook.com/dreamcitybuilding/"
         }
       ]

@@ -80,7 +80,7 @@ export default {
       posts: [
         {
           id: 1,
-          thumbnail: "/thumbnail/pic1.jpg",
+          thumbnail: "./thumbnail/pic1.jpg",
           title: "【SHARE喃喃】這是最好的時代，也是最壞的時代",
           featured: false,
           date: new Date("3/08/2015"),
@@ -89,7 +89,7 @@ export default {
         },
         {
           id: 2,
-          thumbnail: "/thumbnail/pic2.jpg",
+          thumbnail: "./thumbnail/pic2.jpg",
           title: "【SHARE筆記】拜訪：人生百味",
           featured: true,
           date: new Date("3/07/2015"),
@@ -98,7 +98,7 @@ export default {
         },
         {
           id: 3,
-          thumbnail: "/thumbnail/pic3.jpg",
+          thumbnail: "./thumbnail/pic3.jpg",
           title: "【SHARE筆記】拜訪：臺灣夢想城鄉營造協會",
           featured: false,
           date: new Date("3/02/2015"),
@@ -107,7 +107,7 @@ export default {
         },
         {
           id: 4,
-          thumbnail: "/thumbnail/pic4.jpg",
+          thumbnail: "./thumbnail/pic4.jpg",
           title: "【SHARE筆記】拜訪：台北華陰街恩友中心",
           featured: false,
           date: new Date("2/26/2015"),
@@ -116,7 +116,7 @@ export default {
         },
         {
           id: 5,
-          thumbnail: "/thumbnail/pic5.jpg",
+          thumbnail: "./thumbnail/pic5.jpg",
           title: "【SHARE喃喃】我想，不過是寢室的模樣不一樣吧",
           featured: false,
           date: new Date("2/10/2015"),
