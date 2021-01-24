@@ -2,9 +2,12 @@
   <div class="blog">
     <div class="tab-mode d-md-none">
       <v-tabs v-model="tab" grow>
-        <v-tab>All Posts</v-tab>
-        <v-tab>Featured Post</v-tab>
-        <v-tab>Recent Posts</v-tab>
+        <v-tabs-slider class="red darken-2">
+
+        </v-tabs-slider>
+        <v-tab class="grey lighten-5 text--darken-2 red--text">All Posts</v-tab>
+        <v-tab class="grey lighten-5 text--darken-2 red--text">Featured Post</v-tab>
+        <v-tab class="grey lighten-5 text--darken-2 red--text">Recent Posts</v-tab>
       </v-tabs>
 
       <v-tabs-items v-model="tab">
@@ -26,7 +29,7 @@
       </v-tabs-items>
     </div>
 
-    <div class="wide-mode d-md-flex d-lg-flex d-xl-flex">
+    <div class="wide-mode d-none d-md-flex">
       <v-container>
         <v-row>
           <v-col md="8">
