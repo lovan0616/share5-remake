@@ -4,7 +4,7 @@
       <h1 class="font-weight-light display-1">{{ event.name_ch }}</h1>
       <v-chip class="dateChip red white--text">
         <v-icon left class="white--text">mdi-calendar-minus</v-icon>
-        {{ event.date }}
+        {{ event.date | dateFormat }}
       </v-chip>
       <v-carousel :height="{100: windowWidth < 600 }">
         <v-carousel-item v-for="pic in event.album" :key="pic" :src="pic"></v-carousel-item>
@@ -14,12 +14,18 @@
 </template>
 
 <script>
+import dayjs from 'dayjs'
 export default {
   name: "Album",
   props: {
     event: {
       type: Object,
       required: true
+    }
+  },
+    filters: {
+    dateFormat(date) {
+      return dayjs(date).format('DD/MM/YYYY')
     }
   },
   data() {
