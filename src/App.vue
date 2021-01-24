@@ -47,7 +47,7 @@
       </v-navigation-drawer>
 
     <v-main>
-      <router-view></router-view>
+      <router-view class="routerView"></router-view>
     </v-main>
 
       <Footer />
@@ -76,3 +76,9 @@ export default {
   }
 };
 </script>
+
+<style>
+.routerView {
+  background-color: #FAFAFA;
+}
+</style>
