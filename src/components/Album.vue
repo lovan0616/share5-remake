@@ -7,7 +7,9 @@
         {{ event.date | dateFormat }}
       </v-chip>
       <v-carousel :height="{100: windowWidth < 600 }">
-        <v-carousel-item v-for="pic in event.album" :key="pic" :src="pic"></v-carousel-item>
+        <v-carousel-item v-for="pic in event.album" :key="pic" eager>
+          <v-img :src="pic" eager></v-img>
+        </v-carousel-item>
       </v-carousel>
     </section>
   </div>

@@ -8,7 +8,9 @@
         height="100%"
         class="carousel"
       >
-        <v-carousel-item v-for="carousel in carousels" :key="carousel.index" :src="carousel.link"></v-carousel-item>
+        <v-carousel-item v-for="carousel in carousels" :key="carousel.index" eager>
+          <v-img :src="carousel.link" height="100%" eager></v-img>
+        </v-carousel-item>
       </v-carousel>
     </div>
 
