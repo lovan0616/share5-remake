@@ -90,8 +90,8 @@ export default {
 
 .linkChip {
   position: absolute;
-  top: 50%;
+  top: 32%;
   left: 50%;
-  transform: translate(-50%, -100%);
+  transform: translate(-50%, 0);
 }
 </style>

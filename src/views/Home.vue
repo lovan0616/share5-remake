@@ -14,11 +14,11 @@
       </v-carousel>
     </div>
 
-    <v-container>
-      <v-row align="center" class="mb-3">
+    <v-container class="container">
+      <v-row align="center">
         <v-col class="d-flex flex-column align-center">
-          <p class="display-1">嗨！我們是Share5</p>
-          <p class="grey--text">目標成為長期性關懷街友組織，除不定期募資外，將持續推廣各式活動，更深入理解街友文化的輪廓，期許讓更多人能理解、尊重。</p>
+          <p class="text-h6 text-sm-h4 grey--text text--darken-3">嗨！我們是來自政大的Share5</p>
+          <p class="grey--text">自發性關懷街友組織，除不定期募資外，將持續推廣各式活動，更深入理解街友文化的輪廓，期許讓更多人能理解、尊重。</p>
         </v-col>
       </v-row>
     </v-container>
@@ -28,7 +28,7 @@
       src="nccu.jpg"
       class="parallax"
     >
-      <v-row>
+      <!-- <v-row>
         <v-col cols="12" sm="4" class="d-flex justify-center" align-self="center">
           <v-chip class="red darken-2 white--text">
             <v-icon class="white--text">mdi-hand-left</v-icon>政大自發性公益團體
@@ -44,7 +44,7 @@
             <v-icon class="white--text">mdi-duck</v-icon>用創意帶來改變
           </v-chip>
         </v-col>
-      </v-row>
+      </v-row> -->
     </v-parallax>
 
     <Email />
@@ -78,6 +78,10 @@ export default {
 
 .carousel {
   top: -56px;
+}
+
+.container {
+  margin-bottom: 60px;
 }
 
 @media (min-width: 600px), print {
