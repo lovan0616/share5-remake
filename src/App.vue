@@ -68,7 +68,6 @@ export default {
         { name: '首頁', link: '/', icon:'mdi-home'},
         { name: '關於我們', link: '/about', icon:'mdi-information-variant'},
         { name: '活動紀錄', link: '/event', icon:'mdi-image-multiple'},
-        { name: 'Share部落', link: '/blog', icon:'mdi-post'},
         { name: '相關連結', link: '/org', icon:'mdi-charity'},
       ],
       drawer: false
